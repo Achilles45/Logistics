@@ -72,7 +72,7 @@ export default {}
 //MEDIA QUERIES
 @media only screen and (max-width: 600px) {
   .banner {
-    height: 80vh;
+    height: 100vh;
     .banner__text {
       h1 {
         font-size: 2rem !important;
