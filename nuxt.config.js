@@ -14,7 +14,13 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Poppins&display=swap'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -23,7 +29,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/styles/reset.scss'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -43,7 +49,22 @@ export default {
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    [
+      'nuxt-fontawesome',
+      {
+        imports: [
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['fas']
+          },
+          {
+            set: '@fortawesome/free-brands-svg-icons',
+            icons: ['fab']
+          }
+        ]
+      }
+    ]
   ],
   /*
    ** Axios module configuration
