@@ -26,7 +26,7 @@
               </div>
               <div class="details__body">
                 <small>SEND US EMAIL ON</small>
-                <p>hello@logistics.com</p>
+                <p>globalexport1courierservicesx@gmail.com</p>
               </div>
             </div>
             <div class="details__card d-flex jusity-content-between">
@@ -98,8 +98,8 @@ export default {
 
 <style lang="scss" scoped>
 .contact__heading {
-  background: linear-gradient(rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.9)),
-    url('../assets/images/slider-1.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../assets/images/banner.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
