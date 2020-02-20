@@ -15,10 +15,12 @@
           <ul class="d-flex navbar__items justify-content-between pt-3">
             <li><nuxt-link to="/">Home</nuxt-link></li>
             <li><nuxt-link to="/">About Us</nuxt-link></li>
-            <li><nuxt-link to="/">Contact Us</nuxt-link></li>
-            <li><nuxt-link to="/">Track your goods</nuxt-link></li>
+            <li><nuxt-link to="/contact">Contact Us</nuxt-link></li>
+            <li><nuxt-link to="/tracking">Track your goods</nuxt-link></li>
             <li>
-              <nuxt-link to="/" class="quote__btn">Request a Quote</nuxt-link>
+              <nuxt-link to="/request" class="quote__btn"
+                >Request a Quote</nuxt-link
+              >
             </li>
           </ul>
         </div>
@@ -99,7 +101,7 @@ export default {
     cursor: pointer;
   }
   ul {
-    background: #000;
+    background: #333;
     flex-direction: column;
     position: absolute;
     padding: 23rem 2rem;
